@@ -1,18 +1,18 @@
 ***targil 8 page 25:
   
-max_pos = 0
+x = int(input("please enter a number"))
+min = x
 
-while True:
+while x > 0:
+
+    if x < min:
+        min = x
+
     x = int(input("please enter a number"))
 
-    if x <= 0:
-        break
-    else:
-        if x > max_pos:
-            max_pos = x
-
-if max_pos > 0:
-    print(max_pos)
+if min > 0:
+    print(min)
+    
     
 ****targil 9 page 25
 
@@ -107,3 +107,20 @@ while True:
 
 print(sum)
 
+*****targil 2
+
+while True:
+     first_num = 0
+     second_num = 0
+
+     while first_num == 0:
+          first_num = int(input("please enter first number: "))
+
+     while second_num == 0:
+          second_num = int(input("please enter second number: "))
+
+     if first_num > second_num:
+          print("bigger")
+          continue
+     else:
+          break
